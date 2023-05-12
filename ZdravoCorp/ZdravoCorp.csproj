@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="View\doktor.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Model\DAO\" />
+    <Folder Include="Commands\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Extended.Wpf.Toolkit" Version="4.5.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\doktor.jpg" />
+  </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>
+
+</Project>

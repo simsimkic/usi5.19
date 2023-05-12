@@ -1,0 +1,311 @@
+[
+  {
+    "Warehouses": [
+      {
+        "Id": "warehouse1",
+        "InventoryItems": [
+          {
+            "EquipmentId": "equipment1",
+            "Quantity": 20,
+            "Reserved": 0
+          },
+          {
+            "EquipmentId": "equipment2",
+            "Quantity": 74,
+            "Reserved": 0
+          },
+          {
+            "EquipmentId": "equipment3",
+            "Quantity": 25,
+            "Reserved": 0
+          },
+          {
+            "EquipmentId": "equipment8",
+            "Quantity": 5,
+            "Reserved": 0
+          },
+          {
+            "EquipmentId": "equipment12",
+            "Quantity": 4,
+            "Reserved": 1
+          },
+          {
+            "EquipmentId": "equipment16",
+            "Quantity": 3,
+            "Reserved": 0
+          },
+          {
+            "EquipmentId": "equipment19",
+            "Quantity": 1,
+            "Reserved": 0
+          }
+        ]
+      }
+    ],
+    "Rooms": [
+      {
+        "Id": "room1",
+        "Capacity": 3,
+        "FreeBeds": 3,
+        "RoomType": 0,
+        "InventoryItems": [
+          {
+            "EquipmentId": "equipment2",
+            "Quantity": 7,
+            "Reserved": 0
+          },
+          {
+            "EquipmentId": "equipment5",
+            "Quantity": 4,
+            "Reserved": 5
+          },
+          {
+            "EquipmentId": "equipment12",
+            "Quantity": 1,
+            "Reserved": 0
+          },
+          {
+            "EquipmentId": "equipment6",
+            "Quantity": 0,
+            "Reserved": 0
+          }
+        ]
+      },
+      {
+        "Id": "room2",
+        "Capacity": 3,
+        "FreeBeds": 3,
+        "RoomType": 0,
+        "InventoryItems": [
+          {
+            "EquipmentId": "equipment2",
+            "Quantity": 8,
+            "Reserved": 0
+          },
+          {
+            "EquipmentId": "equipment6",
+            "Quantity": 4,
+            "Reserved": 0
+          },
+          {
+            "EquipmentId": "equipment12",
+            "Quantity": 2,
+            "Reserved": 0
+          },
+          {
+            "EquipmentId": "equipment8",
+            "Quantity": 0,
+            "Reserved": 0
+          }
+        ]
+      },
+      {
+        "Id": "room3",
+        "Capacity": 3,
+        "FreeBeds": 3,
+        "RoomType": 1,
+        "InventoryItems": [
+          {
+            "EquipmentId": "equipment5",
+            "Quantity": 0,
+            "Reserved": 11
+          },
+          {
+            "EquipmentId": "equipment4",
+            "Quantity": 14,
+            "Reserved": 1
+          },
+          {
+            "EquipmentId": "equipment7",
+            "Quantity": 2,
+            "Reserved": 1
+          },
+          {
+            "EquipmentId": "equipment3",
+            "Quantity": 15,
+            "Reserved": 0
+          },
+          {
+            "EquipmentId": "equipment2",
+            "Quantity": 6,
+            "Reserved": 0
+          },
+          {
+            "EquipmentId": "equipment1",
+            "Quantity": 8,
+            "Reserved": 0
+          }
+        ]
+      },
+      {
+        "Id": "room4",
+        "Capacity": 3,
+        "FreeBeds": 1,
+        "RoomType": 1,
+        "InventoryItems": [
+          {
+            "EquipmentId": "eqipment10",
+            "Quantity": 0,
+            "Reserved": 0
+          },
+          {
+            "EquipmentId": "equipment12",
+            "Quantity": 5,
+            "Reserved": 0
+          }
+        ]
+      },
+      {
+        "Id": "room5",
+        "Capacity": 3,
+        "FreeBeds": 1,
+        "RoomType": 1,
+        "InventoryItems": [
+          {
+            "EquipmentId": "eqipment9",
+            "Quantity": 20,
+            "Reserved": 0
+          },
+          {
+            "EquipmentId": "equipment2",
+            "Quantity": 5,
+            "Reserved": 0
+          },
+          {
+            "EquipmentId": "equipment6",
+            "Quantity": 1,
+            "Reserved": 0
+          }
+        ]
+      },
+      {
+        "Id": "room6",
+        "Capacity": 3,
+        "FreeBeds": 1,
+        "RoomType": 1,
+        "InventoryItems": [
+          {
+            "EquipmentId": "equipment4",
+            "Quantity": 6,
+            "Reserved": 3
+          },
+          {
+            "EquipmentId": "equipment1",
+            "Quantity": 4,
+            "Reserved": 0
+          }
+        ]
+      },
+      {
+        "Id": "room7",
+        "Capacity": 3,
+        "FreeBeds": 1,
+        "RoomType": 2,
+        "InventoryItems": [
+          {
+            "EquipmentId": "equipment1",
+            "Quantity": 33,
+            "Reserved": 0
+          },
+          {
+            "EquipmentId": "equipment11",
+            "Quantity": 3,
+            "Reserved": 0
+          }
+        ]
+      },
+      {
+        "Id": "room8",
+        "Capacity": 3,
+        "FreeBeds": 1,
+        "RoomType": 2,
+        "InventoryItems": [
+          {
+            "EquipmentId": "equipment5",
+            "Quantity": 5,
+            "Reserved": 0
+          },
+          {
+            "EquipmentId": "equipment9",
+            "Quantity": 7,
+            "Reserved": 0
+          },
+          {
+            "EquipmentId": "equipment11",
+            "Quantity": 3,
+            "Reserved": 0
+          },
+          {
+            "EquipmentId": "equipment8",
+            "Quantity": 1,
+            "Reserved": 0
+          }
+        ]
+      },
+      {
+        "Id": "room9",
+        "Capacity": 3,
+        "FreeBeds": 1,
+        "RoomType": 2,
+        "InventoryItems": [
+          {
+            "EquipmentId": "equipment7",
+            "Quantity": 3,
+            "Reserved": 0
+          },
+          {
+            "EquipmentId": "equipment11",
+            "Quantity": 3,
+            "Reserved": 0
+          },
+          {
+            "EquipmentId": "equipment9",
+            "Quantity": 14,
+            "Reserved": 0
+          }
+        ]
+      },
+      {
+        "Id": "room10",
+        "Capacity": 3,
+        "FreeBeds": 2,
+        "RoomType": 2,
+        "InventoryItems": [
+          {
+            "EquipmentId": "equipment7",
+            "Quantity": 3,
+            "Reserved": 0
+          },
+          {
+            "EquipmentId": "equipment11",
+            "Quantity": 3,
+            "Reserved": 0
+          },
+          {
+            "EquipmentId": "equipment5",
+            "Quantity": 2,
+            "Reserved": 0
+          }
+        ]
+      },
+      {
+        "Id": "room11",
+        "Capacity": 3,
+        "FreeBeds": 1,
+        "RoomType": 3,
+        "InventoryItems": [
+          {
+            "EquipmentId": "equipment7",
+            "Quantity": 11,
+            "Reserved": 0
+          },
+          {
+            "EquipmentId": "equipment10",
+            "Quantity": 2,
+            "Reserved": 0
+          }
+        ]
+      }
+    ]
+  }
+]

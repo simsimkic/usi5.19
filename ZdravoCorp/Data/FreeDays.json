@@ -1,0 +1,11 @@
+[
+  {
+    "Id": "freeDays1",
+    "RequestStatus": 0,
+    "Description": "I have birthday party.",
+    "TimeSlot": {
+      "StartTime": "2023-04-20T10:30:00Z",
+      "EndTime": "2023-04-23T10:30:00Z"
+    }
+  }
+]

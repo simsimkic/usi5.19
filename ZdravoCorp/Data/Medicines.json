@@ -1,0 +1,7 @@
+[
+  {
+    "Id": "medicine1",
+    "Name": "amoxicilin",
+    "Ingredients" :  ["penicilin", ""]
+  }
+]

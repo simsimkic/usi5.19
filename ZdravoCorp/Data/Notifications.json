@@ -1,0 +1,16 @@
+[
+  {
+    "Id": "notification1",
+    "PersonUsername": "vesna",
+    "Title": "ODLOZEN TERMIN PREGLEDA",
+    "Description": "Odlozen pregled: appointment9. Hitan pregled u terminu: 2023-05-11 21:39:30",
+    "NotificationStatus": 1
+  },
+  {
+    "Id": "notification2",
+    "PersonUsername": "luka",
+    "Title": "HITAN PREGLED",
+    "Description": "Hitan pregled u terminu: 2023-05-11 21:39:30",
+    "NotificationStatus": 1
+  }
+]

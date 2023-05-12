@@ -1,0 +1,47 @@
+﻿<Window x:Class="ZdravoCorp.View.PatientMedicalRecordView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZdravoCorp.View"
+        mc:Ignorable="d"
+        Title="PatientMedicalRecordView" Height="450" Width="1100" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid Background="#FF0090FF">
+        <Label Content="Review and search observations" HorizontalAlignment="Left" Height="64" Margin="68,24,0,0" VerticalAlignment="Top" Width="418" FontSize="20" FontWeight="Bold"/>
+        <DataGrid HorizontalAlignment="Center" IsReadOnly="true" x:Name="AppointmentsDataGrid" Height="199" Margin="0,88,0,0" VerticalAlignment="Top" Width="1080">
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="AppointmentId" Width="1*" Binding="{Binding Appointment.Id}"/>
+                <DataGridTextColumn Header="AppointmentStatus" Width="1*"  Binding="{Binding Appointment.AppointmentStatus}"/>
+                <DataGridTextColumn Header="AppointmentType" Width="1*"  Binding="{Binding Appointment.AppointmentType}"/>
+                <DataGridTextColumn Header="StartTime" Width="1*"  Binding="{Binding Appointment.TimeSlot.StartTime}"/>
+                <DataGridTextColumn Header="Observation" Width="1*" Binding="{Binding Appointment.Anamnesis.Observations}" />
+                <DataGridTemplateColumn Header="Symptoms" Width="1*">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <StackPanel Orientation="Horizontal">
+                                <ItemsControl ItemsSource="{Binding Appointment.Anamnesis.Symptoms}">
+                                    <ItemsControl.ItemTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding}" Margin="2" />
+                                        </DataTemplate>
+                                    </ItemsControl.ItemTemplate>
+                                </ItemsControl>
+                            </StackPanel>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+                <DataGridTextColumn Header="Specialization" Width="1*" Binding="{Binding Doctor.Specialization}" />
+                <DataGridTextColumn Header="Doctor username" Width="1*" Binding="{Binding Doctor.Username}"/>
+            </DataGrid.Columns>
+
+        </DataGrid>
+        <TextBox HorizontalAlignment="Left" x:Name="SearchTextBox" Height="24" Margin="32,361,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="182" TextChanged="SearchTextBox_TextChanged"/>
+        <Label Content="Search by observations:" HorizontalAlignment="Left" Height="24" Margin="32,313,0,0" VerticalAlignment="Top" Width="148" FontWeight="Bold"/>
+        <ComboBox HorizontalAlignment="Left" x:Name="SortingComboBox" SelectionChanged="SortingComboBox_SelectionChanged" Height="33" Margin="286,361,0,0" VerticalAlignment="Top" Width="132"/>
+        <Label Content="Sort table data by:" HorizontalAlignment="Left" Height="32" Margin="286,313,0,0" VerticalAlignment="Top" Width="136" FontWeight="Bold"/>
+        <Button Content="BACK" HorizontalAlignment="Left" Height="46" Margin="941,350,0,0" VerticalAlignment="Top" Width="112" FontWeight="Bold" FontSize="14" Background="#FF235DBB" Click="BackMainView_Click"/>
+
+    </Grid>
+</Window>
+

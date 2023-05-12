@@ -1,0 +1,90 @@
+[
+  {
+    "Id": "order1",
+    "OrderStatus": 1,
+    "TimeSlot": {
+      "StartTime": "2023-05-10T09:58:22.6287078+02:00",
+      "EndTime": "2023-05-11T09:58:22.6287171+02:00"
+    },
+    "OrderItems": [
+      {
+        "Equipment": {
+          "Id": "equipment8",
+          "Name": "Surgical Lights",
+          "EquipmentType": 1
+        },
+        "Quantity": 3
+      }
+    ]
+  },
+  {
+    "Id": "order2",
+    "OrderStatus": 1,
+    "TimeSlot": {
+      "StartTime": "2023-05-10T09:58:35.7833143+02:00",
+      "EndTime": "2023-05-11T09:58:35.7833257+02:00"
+    },
+    "OrderItems": [
+      {
+        "Equipment": {
+          "Id": "equipment12",
+          "Name": "Anesthesia Machine",
+          "EquipmentType": 1
+        },
+        "Quantity": 5
+      }
+    ]
+  },
+  {
+    "Id": "order3",
+    "OrderStatus": 1,
+    "TimeSlot": {
+      "StartTime": "2023-05-10T17:40:30.4240826+02:00",
+      "EndTime": "2023-05-11T17:40:30.4240892+02:00"
+    },
+    "OrderItems": [
+      {
+        "Equipment": {
+          "Id": "equipment16",
+          "Name": "Surgical drapes",
+          "EquipmentType": 1
+        },
+        "Quantity": 3
+      },
+      {
+        "Equipment": {
+          "Id": "equipment19",
+          "Name": "Incontinence pads",
+          "EquipmentType": 1
+        },
+        "Quantity": 1
+      }
+    ]
+  },
+  {
+    "Id": "order4",
+    "OrderStatus": 0,
+    "TimeSlot": {
+      "StartTime": "2023-05-11T21:23:44.9018336+02:00",
+      "EndTime": "2023-05-12T21:23:44.9018389+02:00"
+    },
+    "OrderItems": [
+      {
+        "Equipment": {
+          "Id": "equipment18",
+          "Name": "Bandages",
+          "EquipmentType": 1
+        },
+        "Quantity": 1
+      },
+      {
+        "Equipment": {
+          "Id": "equipment20",
+          "Name": "Ostomy bags",
+          "EquipmentType": 1
+        },
+        "Quantity": 3
+      }
+    ]
+  }
+]

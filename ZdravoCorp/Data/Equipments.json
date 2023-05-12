@@ -1,0 +1,107 @@
+[
+  {
+    "Id": "equipment1",
+    "Name": "Gause",
+    "EquipmentType": 0
+  },
+  {
+    "Id": "equipment2",
+    "Name": "Scissors",
+    "EquipmentType": 1
+  },
+  {
+    "Id": "equipment3",
+    "Name": "Scalpel",
+    "EquipmentType": 1
+  },
+  {
+    "Id": "equipment4",
+    "Name": "Stethoscope",
+    "EquipmentType": 3
+  },
+  {
+    "Id": "equipment5",
+    "Name": "X-ray Machine",
+    "EquipmentType": 2
+  },
+  {
+    "Id": "equipment6",
+    "Name": "Operating Table",
+    "EquipmentType": 1
+  },
+  {
+    "Id": "equipment7",
+    "Name": "Blood Pressure Monitor",
+    "EquipmentType": 3
+  },
+  {
+    "Id": "equipment8",
+    "Name": "Surgical Lights",
+    "EquipmentType": 1
+  },
+  {
+    "Id": "equipment9",
+    "Name": "Wheelchair",
+    "EquipmentType": 2
+  },
+  {
+    "Id": "equipment10",
+    "Name": "Defibrillator",
+    "EquipmentType": 3
+  },
+  {
+    "Id": "equipment11",
+    "Name": "Bed",
+    "EquipmentType": 2
+  },
+  {
+    "Id": "equipment12",
+    "Name": "Anesthesia Machine",
+    "EquipmentType": 2
+  },
+  {
+    "Id": "equipment13",
+    "Name": "Disposable gloves",
+    "EquipmentType": 1
+  },
+  {
+    "Id": "equipment14",
+    "Name": "Needles",
+    "EquipmentType": 1
+  },
+  {
+    "Id": "equipment15",
+    "Name": "Syringes",
+    "EquipmentType": 2
+  },
+  {
+    "Id": "equipment16",
+    "Name": "Surgical drapes",
+    "EquipmentType": 1
+  },
+  {
+    "Id": "equipment17",
+    "Name": "Catheters",
+    "EquipmentType": 2
+  },
+  {
+    "Id": "equipment18",
+    "Name": "Bandages",
+    "EquipmentType": 1
+  },
+  {
+    "Id": "equipment19",
+    "Name": "Incontinence pads",
+    "EquipmentType": 1
+  },
+  {
+    "Id": "equipment20",
+    "Name": "Ostomy bags",
+    "EquipmentType": 1
+  },
+  {
+    "Id": "equipment21",
+    "Name": "Medical masks",
+    "EquipmentType": 2
+  }
+]

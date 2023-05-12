@@ -1,0 +1,146 @@
+﻿<Window x:Class="ZdravoCorp.View.CreateOrderView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ZdravoCorp.View"
+        xmlns:serializer="clr-namespace:ZdravoCorp.Serializer"
+        mc:Ignorable="d"
+        Title="Create Equipment Order" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" Height="450" Width="800">
+    <Window.Resources>
+        <serializer:IntToStringConverter x:Key="IntToStringConverter"/>
+    </Window.Resources>
+    <Window.Background>
+        <ImageBrush ImageSource="/Images/doktor.jpg" />
+    </Window.Background>
+    <Grid x:Name="Window" HorizontalAlignment="Right">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="0.15*" />
+        </Grid.RowDefinitions>
+
+        <!-- Data table -->
+        <DataGrid x:Name="DataTable" Grid.Row="0" Margin="10" AutoGenerateColumns="False" Background="Transparent" ItemsSource="{Binding Equipments}" SelectedItem="{Binding SelectedRow}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Binding="{Binding Item1.Id}"  Width="1*">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Name" Binding="{Binding Item1.Name}"  Width="1*">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Equipment Type" Binding="{Binding Item1.EquipmentType}" Width="1*">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+                <DataGridTextColumn Header="Quantity" Binding="{Binding Item2}"  Width="1*">
+                    <DataGridTextColumn.ElementStyle>
+                        <Style TargetType="TextBlock">
+                            <Setter Property="HorizontalAlignment" Value="Center"/>
+                        </Style>
+                    </DataGridTextColumn.ElementStyle>
+                </DataGridTextColumn>
+            </DataGrid.Columns>
+            <DataGrid.ColumnHeaderStyle>
+                <Style TargetType="DataGridColumnHeader">
+                    <Setter Property="Background" Value="#FF90C2EE" />
+                    <Setter Property="Foreground" Value="White" />
+                    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                </Style>
+            </DataGrid.ColumnHeaderStyle>
+            <DataGrid.RowStyle>
+                <Style TargetType="DataGridRow">
+                    <Setter Property="Background">
+                        <Setter.Value>
+                            <SolidColorBrush Color="#90C2EE" Opacity="0.4" />
+                        </Setter.Value>
+                    </Setter>
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding Item2}" Value="0">
+                            <Setter Property="Background" Value="DeepPink" />
+                            <Setter Property="Opacity" Value="0.6" />
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </DataGrid.RowStyle>
+            <DataGrid.CellStyle>
+                <Style TargetType="DataGridCell">
+                    <Setter Property="Foreground" Value="White" />
+                </Style>
+            </DataGrid.CellStyle>
+        </DataGrid>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="10" Height="Auto" Width="Auto">
+            <Grid Height="Auto" Width="780">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="0.6*"/>
+                    <ColumnDefinition Width="0.6*"/>
+                    <ColumnDefinition Width="0.6*"/>
+                </Grid.ColumnDefinitions>
+                <TextBox Grid.Column="0" x:Name="quantityInput" Margin="0 0 10 0" Background="#FF90C2EE" Foreground="White" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" Text="{Binding QuantityInput, Converter={StaticResource IntToStringConverter}, Mode=TwoWay}">
+                    <TextBox.Style>
+                        <Style TargetType="TextBox">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="TextBox">
+                                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="5">
+                                            <Grid>
+                                                <TextBlock x:Name="PlaceholderText" Text="Input Quantity Here..." VerticalAlignment="Center" Margin="5 0 0 0" 
+                                           Foreground="LightGray" HorizontalAlignment="Center" Visibility="Collapsed"/>
+                                                <ScrollViewer x:Name="PART_ContentHost" Margin="5,0,0,0"/>
+                                            </Grid>
+                                        </Border>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="Text" Value="">
+                                                <Setter TargetName="PlaceholderText" Property="Visibility" Value="Visible"/>
+                                            </Trigger>
+                                            <Trigger Property="Text" Value="{x:Null}">
+                                                <Setter TargetName="PlaceholderText" Property="Visibility" Value="Visible"/>
+                                            </Trigger>
+                                            <Trigger Property="IsFocused" Value="True">
+                                                <Setter TargetName="PlaceholderText" Property="Visibility" Value="Collapsed"/>
+                                            </Trigger>
+                                            <Trigger Property="Text" Value="0">
+                                                <Setter TargetName="PlaceholderText" Property="Visibility" Value="Visible"/>
+                                            </Trigger>
+                                            <EventTrigger RoutedEvent="PreviewTextInput">
+                                                <BeginStoryboard>
+                                                    <Storyboard>
+                                                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="PlaceholderText" Storyboard.TargetProperty="Visibility">
+                                                            <DiscreteObjectKeyFrame KeyTime="0" Value="{x:Static Visibility.Collapsed}" />
+                                                        </ObjectAnimationUsingKeyFrames>
+                                                    </Storyboard>
+                                                </BeginStoryboard>
+                                            </EventTrigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </TextBox.Style>
+                </TextBox>
+
+                <Button Grid.Column="1" Content="SAVE" Background="#FF90C2EE"  Foreground="White" HorizontalContentAlignment="Center" Command="{Binding SaveOrder}" />
+                <Button Grid.Column="2" Content="SUBMIT" Background="#FF90C2EE"  Foreground="White" HorizontalContentAlignment="Center" Command="{Binding SubmitOrder}" />
+                <Button Grid.Column="3" Content="BACK" Background="White"  Foreground="#FF90C2EE" HorizontalContentAlignment="Center" Command="{Binding Back}"/>
+
+            </Grid>
+        </StackPanel>
+
+    </Grid>
+</Window>
+

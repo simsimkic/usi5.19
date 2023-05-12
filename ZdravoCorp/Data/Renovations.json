@@ -1,0 +1,11 @@
+[
+  {
+    "Id": "renovation1",
+    "RoomId": "room1",
+    "RenovationType": 2,
+    "TimeSlot": {
+      "StartTime": "2023-04-12T10:30:00Z",
+      "EndTime": "2023-04-12T10:30:00Z"
+    }
+  }
+]

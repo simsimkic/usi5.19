@@ -1,0 +1,116 @@
+[
+  {
+    "MedicalRecord": {
+      "Height": 176,
+      "Weight": 76,
+      "MedicalHistory": [
+        "high blood preasure",
+        "secer",
+        "tumor",
+        "srce"
+      ],
+      "Allergies": [
+        "polen",
+        "trava"
+      ],
+      "AppointmentIds": [
+        "appointment1",
+        "appointment2",
+        "appointment3",
+        "appointment4",
+        "appointment5",
+        "appointment6",
+        "appointment7",
+        "appointment8",
+        "appointment9",
+        "appointment10",
+        "appointment11",
+        "appointment12",
+        "appointment15",
+        "appointment16"
+      ],
+      "Prescriptions": [
+        {
+          "DailyUsage": 3,
+          "Instructions": 0,
+          "MedicineIds": [
+            "medicine1"
+          ]
+        }
+      ],
+      "Referral": {
+        "Type": 1,
+        "Note": ""
+      },
+      "HospitalCare": {
+        "Id": "hospitalCare1",
+        "Duration": 5,
+        "AdditionalTests": [],
+        "RoomId": "room1",
+        "Therapy": {
+          "Description": "",
+          "Medicines": [
+            "medicine1"
+          ]
+        },
+        "Visits": [
+          {
+            "Id": "visit1",
+            "BloodPressure": "150/90",
+            "Temperature": 39.5,
+            "Observations": ""
+          },
+          {
+            "Id": "visit2",
+            "BloodPressure": "120/60",
+            "Temperature": 36.5,
+            "Observations": ""
+          }
+        ]
+      }
+    },
+    "FirstName": "Luka",
+    "LastName": "Farkas",
+    "Username": "luka",
+    "Password": "luka123",
+    "Status": 0
+  },
+  {
+    "MedicalRecord": {
+      "Height": 197,
+      "Weight": 110,
+      "MedicalHistory": [
+        "Preassure"
+      ],
+      "Allergies": [],
+      "AppointmentIds": [],
+      "Prescriptions": [],
+      "Referral": null,
+      "HospitalCare": null
+    },
+    "FirstName": "Stevan",
+    "LastName": "Stevanovic",
+    "Username": "stevan",
+    "Password": "stevan123",
+    "Status": 0
+  },
+  {
+    "MedicalRecord": {
+      "Height": 145,
+      "Weight": 24,
+      "MedicalHistory": [
+        "anemija"
+      ],
+      "Allergies": [],
+      "AppointmentIds": [],
+      "Prescriptions": [],
+      "Referral": null,
+      "HospitalCare": null
+    },
+    "FirstName": "Jana",
+    "LastName": "Janic",
+    "Username": "jana",
+    "Password": "jana123",
+    "Status": 0
+  }
+]

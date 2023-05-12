@@ -1,0 +1,68 @@
+[
+  {
+    "Specialization": 0,
+    "AppointmentIds": [
+      "appointment1",
+      "appointment2",
+      "appointment9",
+      "appointment10",
+      "appointment11",
+      "appointment12",
+      "appointment13",
+      "appointment14",
+      "appointment15"
+    ],
+    "FreeDaysIds": [
+      "freeDays1"
+    ],
+    "FirstName": "Vesna",
+    "LastName": "Vasic",
+    "Username": "vesna",
+    "Password": "vesna123",
+    "Status": 0
+  },
+  {
+    "Specialization": 3,
+    "AppointmentIds": [
+      "appointment3",
+      "appointment4",
+      "appointment5",
+      "appointment6",
+      "appointment7",
+      "appointment8",
+      "appointment16"
+    ],
+    "FreeDaysIds": [
+      "freeDays1"
+    ],
+    "FirstName": "Branko",
+    "LastName": "Brankovic",
+    "Username": "branko",
+    "Password": "branko123",
+    "Status": 0
+  },
+  {
+    "Specialization": 2,
+    "AppointmentIds": [],
+    "FreeDaysIds": [
+      "freeDays1"
+    ],
+    "FirstName": "Marko",
+    "LastName": "Markovic",
+    "Username": "marko",
+    "Password": "marko123",
+    "Status": 0
+  },
+  {
+    "Specialization": 1,
+    "AppointmentIds": [],
+    "FreeDaysIds": [
+      "freeDays1"
+    ],
+    "FirstName": "Pera",
+    "LastName": "Peric",
+    "Username": "pera",
+    "Password": "pera123",
+    "Status": 0
+  }
+]

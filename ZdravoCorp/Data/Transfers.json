@@ -1,0 +1,107 @@
+[
+  {
+    "Id": "transfer1",
+    "FromRoomId": "room2",
+    "ToRoomId": "room8",
+    "InventoryItems": [
+      {
+        "EquipmentId": "equipment8",
+        "Quantity": 1,
+        "Reserved": 0
+      }
+    ],
+    "TransferType": 0,
+    "TransferStatus": 1,
+    "TimeSlot": {
+      "StartTime": "2023-05-11T09:59:02.4908262+02:00",
+      "EndTime": "2023-05-11T10:50:02"
+    }
+  },
+  {
+    "Id": "transfer2",
+    "FromRoomId": "warehouse1",
+    "ToRoomId": "room3",
+    "InventoryItems": [
+      {
+        "EquipmentId": "equipment2",
+        "Quantity": 80,
+        "Reserved": 6
+      },
+      {
+        "EquipmentId": "equipment1",
+        "Quantity": 30,
+        "Reserved": 10
+      },
+      {
+        "EquipmentId": "equipment3",
+        "Quantity": 30,
+        "Reserved": 5
+      }
+    ],
+    "TransferType": 1,
+    "TransferStatus": 1,
+    "TimeSlot": {
+      "StartTime": "2023-05-11T17:09:25.3005652+02:00",
+      "EndTime": "2023-05-11T17:09:25.3005721+02:00"
+    }
+  },
+  {
+    "Id": "transfer3",
+    "FromRoomId": "warehouse1",
+    "ToRoomId": "room4",
+    "InventoryItems": [
+      {
+        "EquipmentId": "equipment12",
+        "Quantity": 10,
+        "Reserved": 5
+      }
+    ],
+    "TransferType": 0,
+    "TransferStatus": 1,
+    "TimeSlot": {
+      "StartTime": "2023-05-11T17:10:46.5421466+02:00",
+      "EndTime": "0001-01-01T00:00:00"
+    }
+  },
+  {
+    "Id": "transfer4",
+    "FromRoomId": "room1",
+    "ToRoomId": "room5",
+    "InventoryItems": [
+      {
+        "EquipmentId": "equipment2",
+        "Quantity": 12,
+        "Reserved": 5
+      },
+      {
+        "EquipmentId": "equipment6",
+        "Quantity": 1,
+        "Reserved": 1
+      }
+    ],
+    "TransferType": 1,
+    "TransferStatus": 1,
+    "TimeSlot": {
+      "StartTime": "2023-05-11T21:24:34.4859763+02:00",
+      "EndTime": "2023-05-11T21:24:34.4859894+02:00"
+    }
+  },
+  {
+    "Id": "transfer5",
+    "FromRoomId": "warehouse1",
+    "ToRoomId": "room9",
+    "InventoryItems": [
+      {
+        "EquipmentId": "equipment12",
+        "Quantity": 5,
+        "Reserved": 1
+      }
+    ],
+    "TransferType": 0,
+    "TransferStatus": 0,
+    "TimeSlot": {
+      "StartTime": "2023-05-11T21:25:21.5334844+02:00",
+      "EndTime": "2023-05-13T09:00:00"
+    }
+  }
+]
